@@ -41,8 +41,7 @@ app.post('/add', function (req, res) {
         'streetaddress': req.body.streetaddress,
         'citystatezip': req.body.citystatezip,
         'latitude': req.body.latitude,
-        'longitude': req.body.longitude,
-        'avatar': req.body.avatar 
+        'longitude': req.body.longitude
     }
     db.get('users').push(user).write();
     console.log(db.get('users').value());
